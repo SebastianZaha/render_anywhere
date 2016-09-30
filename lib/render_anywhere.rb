@@ -25,6 +25,6 @@ module RenderAnywhere
   end
 
   def rendering_controller
-    @rendering_controller ||= self.class.const_get("RenderingController").new
+    @rendering_controller ||= RenderingController.new
   end
 end
